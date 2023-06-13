@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import BarChart from "./BarChart";
+import BubbleChart from "./BubbleChart";
+import Heatmap from "./Heatmap";
+import './index.css'
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="my-2">
+        <BubbleChart />
+      </div>
+      <div className="my-2">
+        <Heatmap />
+      </div>
+      <div className="my-2">
+        <BarChart />
+      </div>
+
     </div>
   );
 }
